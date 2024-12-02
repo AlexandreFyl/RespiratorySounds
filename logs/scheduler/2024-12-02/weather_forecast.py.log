@@ -1,0 +1,220 @@
+[2024-12-02T15:28:25.521+0000] {processor.py:186} INFO - Started process (PID=178) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:28:25.522+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:28:25.523+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:28:25.523+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:28:25.564+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:28:25.555+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 42, in <module>
+    python_callable=extract_weather_data,
+                    ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'extract_weather_data' is not defined
+[2024-12-02T15:28:25.570+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:28:25.585+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.069 seconds
+[2024-12-02T15:28:55.929+0000] {processor.py:186} INFO - Started process (PID=185) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:28:55.930+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:28:55.931+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:28:55.931+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:28:55.948+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:28:55.942+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 42, in <module>
+    python_callable=extract_weather_data,
+                    ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'extract_weather_data' is not defined
+[2024-12-02T15:28:55.951+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:28:55.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.040 seconds
+[2024-12-02T15:29:11.122+0000] {processor.py:186} INFO - Started process (PID=193) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:11.123+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:29:11.125+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.125+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:11.162+0000] {processor.py:925} INFO - DAG(s) 'weather_etl_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:11.485+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.484+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:weather_etl_dag
+[2024-12-02T15:29:11.499+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.499+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:weather_etl_dag
+[2024-12-02T15:29:11.510+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.510+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:weather_etl_dag
+[2024-12-02T15:29:11.521+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.520+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:weather_etl_dag
+[2024-12-02T15:29:11.528+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.528+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:weather_etl_dag
+[2024-12-02T15:29:11.535+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.535+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:weather_etl_dag
+[2024-12-02T15:29:11.540+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.540+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:weather_etl_dag
+[2024-12-02T15:29:11.541+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.541+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:29:11.549+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.549+0000] {dag.py:3262} INFO - Creating ORM DAG for weather_etl_dag
+[2024-12-02T15:29:11.557+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:11.557+0000] {dag.py:4180} INFO - Setting next_dagrun for weather_etl_dag to 2024-12-01 00:00:00+00:00, run_after=2024-12-02 00:00:00+00:00
+[2024-12-02T15:29:11.574+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.456 seconds
+[2024-12-02T15:29:12.633+0000] {processor.py:186} INFO - Started process (PID=194) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:12.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:29:12.636+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:12.636+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:12.663+0000] {processor.py:925} INFO - DAG(s) 'weather_etl_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:12.672+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:12.672+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:29:12.691+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:12.691+0000] {dag.py:4180} INFO - Setting next_dagrun for weather_etl_dag to 2024-12-01 00:00:00+00:00, run_after=2024-12-02 00:00:00+00:00
+[2024-12-02T15:29:12.712+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.084 seconds
+[2024-12-02T15:29:31.872+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:31.873+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:29:31.875+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:31.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:31.913+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:32.131+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.130+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:traitement_son_dag
+[2024-12-02T15:29:32.139+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.139+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:traitement_son_dag
+[2024-12-02T15:29:32.145+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.144+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:traitement_son_dag
+[2024-12-02T15:29:32.152+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.151+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:traitement_son_dag
+[2024-12-02T15:29:32.157+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.157+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:traitement_son_dag
+[2024-12-02T15:29:32.162+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.162+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:traitement_son_dag
+[2024-12-02T15:29:32.168+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.168+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:traitement_son_dag
+[2024-12-02T15:29:32.169+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:29:32.178+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.178+0000] {dag.py:3262} INFO - Creating ORM DAG for traitement_son_dag
+[2024-12-02T15:29:32.186+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:32.186+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-01 00:00:00+00:00, run_after=2024-12-02 00:00:00+00:00
+[2024-12-02T15:29:32.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.335 seconds
+[2024-12-02T15:29:44.056+0000] {processor.py:186} INFO - Started process (PID=202) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:44.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:29:44.060+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:44.059+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:44.085+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:29:44.096+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:44.095+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:29:44.116+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:29:44.116+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-01 00:00:00+00:00, run_after=2024-12-02 00:00:00+00:00
+[2024-12-02T15:29:44.269+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.217 seconds
+[2024-12-02T15:30:14.381+0000] {processor.py:186} INFO - Started process (PID=209) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:14.383+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:30:14.388+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:14.387+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:14.404+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:14.661+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:14.661+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:30:14.675+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:14.675+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-01 00:00:00+00:00, run_after=2024-12-02 00:00:00+00:00
+[2024-12-02T15:30:14.697+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.321 seconds
+[2024-12-02T15:30:31.837+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:31.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:30:31.839+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:31.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:31.862+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:31.872+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:31.872+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:30:32.016+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:32.016+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-01 00:00:00+00:00, run_after=2024-12-02 00:00:00+00:00
+[2024-12-02T15:30:32.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.211 seconds
+[2024-12-02T15:30:44.049+0000] {processor.py:186} INFO - Started process (PID=217) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:44.049+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:30:44.050+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:44.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:44.076+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:30:44.087+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:44.086+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:30:44.105+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:30:44.105+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-01 00:00:00+00:00, run_after=2024-12-02 00:00:00+00:00
+[2024-12-02T15:30:44.127+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.083 seconds
+[2024-12-02T15:31:10.354+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:10.355+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:31:10.356+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:10.356+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:10.384+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:10.587+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:10.586+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:31:10.600+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:10.600+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-02 00:00:00+00:00, run_after=2024-12-03 00:00:00+00:00
+[2024-12-02T15:31:10.620+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.271 seconds
+[2024-12-02T15:31:35.697+0000] {processor.py:186} INFO - Started process (PID=232) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:35.699+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:31:35.700+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:35.700+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:35.728+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:35.738+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:35.738+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:31:35.759+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:35.759+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-02 00:00:00+00:00, run_after=2024-12-03 00:00:00+00:00
+[2024-12-02T15:31:35.779+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.087 seconds
+[2024-12-02T15:31:36.712+0000] {processor.py:186} INFO - Started process (PID=233) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:36.713+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:31:36.714+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:36.714+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:36.736+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:36.745+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:36.745+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:31:36.762+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:36.762+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-02 00:00:00+00:00, run_after=2024-12-03 00:00:00+00:00
+[2024-12-02T15:31:36.786+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.078 seconds
+[2024-12-02T15:31:45.794+0000] {processor.py:186} INFO - Started process (PID=234) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:45.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:31:45.796+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:45.795+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:45.819+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:31:46.043+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:46.042+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:31:46.056+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:31:46.056+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-02 00:00:00+00:00, run_after=2024-12-03 00:00:00+00:00
+[2024-12-02T15:31:46.078+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.289 seconds
+[2024-12-02T15:32:01.076+0000] {processor.py:186} INFO - Started process (PID=241) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:01.077+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:32:01.079+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:01.079+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:01.106+0000] {processor.py:925} INFO - DAG(s) 'traitement_son_dag' retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:01.117+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:01.117+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-02T15:32:01.135+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:01.135+0000] {dag.py:4180} INFO - Setting next_dagrun for traitement_son_dag to 2024-12-02 00:00:00+00:00, run_after=2024-12-03 00:00:00+00:00
+[2024-12-02T15:32:01.152+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.081 seconds
+[2024-12-02T15:32:15.200+0000] {processor.py:186} INFO - Started process (PID=242) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:15.201+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:32:15.202+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:15.202+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:15.232+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:15.228+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 49, in <module>
+    train >> test
+    ~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for >>: 'function' and 'function'
+[2024-12-02T15:32:15.233+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:15.252+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.056 seconds
+[2024-12-02T15:32:16.275+0000] {processor.py:186} INFO - Started process (PID=243) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:16.276+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:32:16.277+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:16.277+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:16.315+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:16.312+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 49, in <module>
+    train >> test
+    ~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for >>: 'function' and 'function'
+[2024-12-02T15:32:16.316+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:16.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.108 seconds
+[2024-12-02T15:32:33.502+0000] {processor.py:186} INFO - Started process (PID=250) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:33.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:32:33.505+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:33.505+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:33.533+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:33.530+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 49, in <module>
+    train >> test
+    ~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for >>: 'function' and 'function'
+[2024-12-02T15:32:33.534+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:33.554+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.056 seconds
+[2024-12-02T15:32:35.543+0000] {processor.py:186} INFO - Started process (PID=251) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:35.545+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:32:35.546+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:35.545+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:35.589+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:35.583+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 47, in <module>
+    train >> test
+    ~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for >>: 'function' and 'function'
+[2024-12-02T15:32:35.591+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:35.613+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.076 seconds
+[2024-12-02T15:32:59.868+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:59.869+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:32:59.870+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:59.870+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:59.900+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:32:59.897+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 50, in <module>
+    train >> test
+    ~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for >>: 'function' and 'function'
+[2024-12-02T15:32:59.902+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:32:59.927+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.068 seconds
+[2024-12-02T15:33:01.903+0000] {processor.py:186} INFO - Started process (PID=259) to work on /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:33:01.904+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/weather_forecast.py for tasks to queue
+[2024-12-02T15:33:01.905+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:33:01.905+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:33:01.944+0000] {logging_mixin.py:190} INFO - [2024-12-02T15:33:01.941+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/weather_forecast.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_forecast.py", line 50, in <module>
+    train >> test
+    ~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for >>: 'function' and 'function'
+[2024-12-02T15:33:01.945+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_forecast.py
+[2024-12-02T15:33:02.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/weather_forecast.py took 0.143 seconds
